@@ -366,8 +366,9 @@
       if (!(k in overlaysOrdenado)) overlaysOrdenado[k] = overlayLayers[k];
     });
 
+    var esMobil = window.matchMedia('(max-width: 600px)').matches;
     L.control.layers(baseLayers, overlaysOrdenado, {
-      collapsed: false,
+      collapsed: esMobil,
       position: 'topright'
     }).addTo(map);
 
@@ -391,6 +392,11 @@
     var btn = document.getElementById('btn-leyenda-toggle');
     var body = document.getElementById('leyenda-body');
     if (btn && body) {
+      // En móvil la leyenda arranca plegada
+      if (window.matchMedia('(max-width: 600px)').matches) {
+        body.classList.add('hidden');
+        btn.textContent = '+';
+      }
       btn.addEventListener('click', function () {
         body.classList.toggle('hidden');
         btn.textContent = body.classList.contains('hidden') ? '+' : '−';
