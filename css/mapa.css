@@ -1,0 +1,252 @@
+/* =========================================================
+   Mapa Hídrico y Medioambiental — Comunidad de Madrid
+   Estilos principales
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* ── Contenedor del mapa ──────────────────────────────── */
+#map {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* ── Leyenda ─────────────────────────────────────────── */
+#leyenda {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  padding: 0;
+  min-width: 210px;
+  max-width: 240px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  overflow: hidden;
+}
+
+#leyenda-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background: #37474f;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+#btn-leyenda-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+}
+
+#leyenda-body {
+  padding: 8px 10px 10px;
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+#leyenda-body.hidden {
+  display: none;
+}
+
+.leyenda-seccion {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #546e7a;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 2px;
+}
+
+.leyenda-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+  font-size: 12px;
+  color: #212121;
+  line-height: 1.3;
+}
+
+/* ── Símbolos de leyenda ─────────────────────────────── */
+.sym {
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+/* Línea */
+.sym-linea {
+  width: 26px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+/* Línea dashed gris */
+.sym-dashed {
+  width: 26px;
+  height: 0;
+  border-top: 3px dashed #888;
+  background: transparent !important;
+}
+
+/* Polígono */
+.sym-poligono {
+  width: 20px;
+  height: 14px;
+  border: 2px solid transparent;
+  border-radius: 2px;
+}
+
+/* Icono circular (equipamientos) */
+.sym-icono {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.3);
+}
+
+/* ── Patrón puntitos (ZEPA) ──────────────────────────── */
+.sym-puntos {
+  background-color: rgba(255, 152, 0, 0.15);
+  border-color: #F57C00;
+  position: relative;
+  overflow: hidden;
+}
+
+.sym-puntos::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, #F57C00 1.5px, transparent 1.5px);
+  background-size: 5px 5px;
+}
+
+/* ── Patrón rayas (Parque Nacional) ─────────────────── */
+.sym-rayas {
+  background-color: rgba(244, 67, 54, 0.1);
+  border-color: #c62828;
+  position: relative;
+  overflow: hidden;
+}
+
+.sym-rayas::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #c62828 0px,
+    #c62828 2px,
+    transparent 2px,
+    transparent 7px
+  );
+}
+
+/* ── Patrón triangulitos (Parques Regionales) ────────── */
+.sym-triangulos {
+  background-color: rgba(156, 39, 176, 0.1);
+  border-color: #6a1b9a;
+  position: relative;
+  overflow: hidden;
+}
+
+.sym-triangulos::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpolygon points='4,1 7,7 1,7' fill='none' stroke='%236a1b9a' stroke-width='1'/%3E%3C/svg%3E");
+  background-size: 8px 8px;
+}
+
+/* ── Popups ──────────────────────────────────────────── */
+.leaflet-popup-content {
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 260px;
+}
+
+.leaflet-popup-content strong {
+  font-size: 14px;
+}
+
+.popup-tipo {
+  font-size: 11px;
+  color: #546e7a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.popup-detalle {
+  font-size: 12px;
+  color: #444;
+  margin-top: 4px;
+}
+
+.popup-aprox {
+  font-size: 11px;
+  color: #E65100;
+  font-style: italic;
+  margin-top: 3px;
+}
+
+/* ── Marcadores de equipamientos ─────────────────────── */
+.equip-marker {
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.4);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 600px) {
+  #leyenda {
+    bottom: 60px;
+    right: 5px;
+    left: 5px;
+    max-width: none;
+    min-width: 0;
+  }
+
+  #leyenda-body {
+    max-height: 45vh;
+  }
+}
+
+/* ── Atribución ──────────────────────────────────────── */
+.leaflet-control-attribution {
+  font-size: 10px;
+}
+
+/* ── Bases minimalistas teñidas ──────────────────────── */
+/* El filtro se aplica al contenedor del tileLayer (className de L.tileLayer).
+   Solo afecta a las teselas raster; las capas vectoriales van en panes separados. */
+
+/* Ocre claro: tono amarillo arena suave (~#E8D8A0) */
+.base-ocre img {
+  filter: sepia(0.5) saturate(1.3) hue-rotate(-15deg) brightness(1.03);
+}

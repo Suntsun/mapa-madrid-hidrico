@@ -1,0 +1,373 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1660432,
+          40.5961012
+        ]
+      },
+      "properties": {
+        "nombre": "Arboreto Luis Ceballos",
+        "tipo": "Centro de Educación Ambiental",
+        "municipio": "San Lorenzo de El Escorial",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7885509,
+          40.3015083
+        ]
+      },
+      "properties": {
+        "nombre": "Bosque Sur",
+        "tipo": "Centro de Educación Ambiental",
+        "municipio": "Fuenlabrada",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4863269,
+          40.4214765
+        ]
+      },
+      "properties": {
+        "nombre": "Caserío de Henares",
+        "tipo": "Centro de Educación Ambiental",
+        "municipio": "San Fernando de Henares",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.2047875,
+          40.3772895
+        ]
+      },
+      "properties": {
+        "nombre": "El Águila",
+        "tipo": "Centro de Educación Ambiental",
+        "municipio": "Chapinería",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5310879,
+          40.3536054
+        ]
+      },
+      "properties": {
+        "nombre": "El Campillo",
+        "tipo": "Centro de Educación Ambiental",
+        "municipio": "Rivas-Vaciamadrid",
+        "aproximado": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5040443,
+          41.1205097
+        ]
+      },
+      "properties": {
+        "nombre": "Hayedo de Montejo",
+        "tipo": "Centro de Educación Ambiental",
+        "municipio": "Montejo de la Sierra",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7838179,
+          40.3116803
+        ]
+      },
+      "properties": {
+        "nombre": "Polvoranca",
+        "tipo": "Centro de Educación Ambiental",
+        "municipio": "Leganés",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8861306,
+          40.8869285
+        ]
+      },
+      "properties": {
+        "nombre": "Valle del Lozoya / Puente del Perdón",
+        "tipo": "Centro de Educación Ambiental",
+        "municipio": "Rascafría",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8649327,
+          40.7267591
+        ]
+      },
+      "properties": {
+        "nombre": "Manzanares",
+        "tipo": "Centro de Educación Ambiental",
+        "municipio": "Manzanares el Real",
+        "aproximado": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8733564,
+          40.7651199
+        ]
+      },
+      "properties": {
+        "nombre": "La Pedriza",
+        "tipo": "Centro de Visitantes",
+        "municipio": "Manzanares el Real",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0661385,
+          40.7439844
+        ]
+      },
+      "properties": {
+        "nombre": "Valle de la Fuenfría",
+        "tipo": "Centro de Visitantes",
+        "municipio": "Cercedilla",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8882329,
+          40.8886403
+        ]
+      },
+      "properties": {
+        "nombre": "Valle del Paular",
+        "tipo": "Centro de Visitantes",
+        "municipio": "Rascafría",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.9619704,
+          40.8233215
+        ]
+      },
+      "properties": {
+        "nombre": "Peñalara / Puerto de Cotos",
+        "tipo": "Centro de Visitantes",
+        "municipio": "Rascafría/Cotos",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.363981,
+          40.481954
+        ]
+      },
+      "properties": {
+        "nombre": "Oficina Comarcal Alcalá de Henares",
+        "tipo": "Oficina Comarcal",
+        "municipio": "Alcalá de Henares",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6040097,
+          40.0322289
+        ]
+      },
+      "properties": {
+        "nombre": "Oficina Comarcal Aranjuez",
+        "tipo": "Oficina Comarcal",
+        "municipio": "Aranjuez",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4381627,
+          40.3007913
+        ]
+      },
+      "properties": {
+        "nombre": "Oficina Comarcal Arganda del Rey",
+        "tipo": "Oficina Comarcal",
+        "municipio": "Arganda del Rey",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7169615,
+          40.471881
+        ]
+      },
+      "properties": {
+        "nombre": "Oficina Comarcal Buitrago de Lozoya",
+        "tipo": "Oficina Comarcal",
+        "municipio": "Buitrago de Lozoya",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7492128,
+          40.6620605
+        ]
+      },
+      "properties": {
+        "nombre": "Oficina Comarcal Colmenar Viejo",
+        "tipo": "Oficina Comarcal",
+        "municipio": "Colmenar Viejo",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1281427,
+          40.5836411
+        ]
+      },
+      "properties": {
+        "nombre": "Oficina Comarcal El Escorial",
+        "tipo": "Oficina Comarcal",
+        "municipio": "El Escorial",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.014299,
+          40.2877169
+        ]
+      },
+      "properties": {
+        "nombre": "Oficina Comarcal Navalcarnero",
+        "tipo": "Oficina Comarcal",
+        "municipio": "Navalcarnero",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.3986503,
+          40.3625
+        ]
+      },
+      "properties": {
+        "nombre": "Oficina Comarcal San Martín de Valdeiglesias",
+        "tipo": "Oficina Comarcal",
+        "municipio": "San Martín de Valdeiglesias",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.538293,
+          40.8277149
+        ]
+      },
+      "properties": {
+        "nombre": "Oficina Comarcal Torrelaguna",
+        "tipo": "Oficina Comarcal",
+        "municipio": "Torrelaguna",
+        "aproximado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.2738764,
+          40.1683582
+        ]
+      },
+      "properties": {
+        "nombre": "Oficina Comarcal Villarejo de Salvanés",
+        "tipo": "Oficina Comarcal",
+        "municipio": "Villarejo de Salvanés",
+        "aproximado": false
+      }
+    }
+  ]
+}

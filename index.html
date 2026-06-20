@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa Hídrico y Medioambiental — Comunidad de Madrid</title>
+
+  <!-- Leaflet CSS (local) -->
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/mapa.css" />
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <!-- Leyenda -->
+  <div id="leyenda">
+    <div id="leyenda-header">
+      <strong>Leyenda</strong>
+      <button id="btn-leyenda-toggle" title="Plegar/desplegar leyenda">−</button>
+    </div>
+    <div id="leyenda-body">
+      <div class="leyenda-seccion">AGUAS</div>
+      <div class="leyenda-item"><span class="sym sym-linea" style="background:#1565c0;height:3px;margin-top:8px;"></span> Ríos</div>
+      <div class="leyenda-item"><span class="sym sym-linea" style="background:#4a90d9;height:2px;margin-top:9px;"></span> Arroyos</div>
+      <div class="leyenda-item"><span class="sym sym-poligono" style="background:rgba(26,111,173,0.6);border-color:#1a6fad;"></span> Embalses</div>
+      <div class="leyenda-item"><span class="sym sym-poligono" style="background:rgba(0,188,212,0.5);border-color:#00bcd4;"></span> Humedales</div>
+
+      <div class="leyenda-seccion">ESPACIOS PROTEGIDOS</div>
+      <div class="leyenda-item"><span class="sym sym-poligono" style="background:rgba(76,175,80,0.6);border-color:#388e3c;"></span> ZEC / LIC</div>
+      <div class="leyenda-item">
+        <span class="sym sym-poligono" style="background:rgba(255,140,0,0.42);border-color:#E65100;"></span> ZEPA
+      </div>
+      <div class="leyenda-item">
+        <span class="sym sym-poligono" style="background:rgba(176,65,62,0.42);border-color:#8B2E2B;"></span> Parque Nacional Sierra de Guadarrama
+      </div>
+      <div class="leyenda-item">
+        <span class="sym sym-poligono" style="background:rgba(240,176,176,0.30);border-color:#C97A7A;"></span> Zona Periférica de Protección
+      </div>
+      <div class="leyenda-seccion" style="font-size:0.78em;margin-top:2px;margin-bottom:2px;">Parques Regionales</div>
+      <div class="leyenda-item"><span class="sym sym-poligono" style="background:rgba(46,125,50,0.35);border-color:#1b5e20;border-width:2px;"></span> Cuenca Alta del Manzanares</div>
+      <div class="leyenda-item"><span class="sym sym-poligono" style="background:rgba(0,105,92,0.35);border-color:#004d40;border-width:2px;"></span> Sierra de Guadarrama</div>
+      <div class="leyenda-item"><span class="sym sym-poligono" style="background:rgba(85,139,47,0.35);border-color:#33691e;border-width:2px;"></span> Sureste</div>
+
+      <div class="leyenda-seccion">ADMINISTRATIVO</div>
+      <div class="leyenda-item"><span class="sym sym-linea" style="background:#212121;height:3px;margin-top:8px;"></span> Comarcas Forestales</div>
+      <div class="leyenda-item"><span class="sym sym-linea sym-dashed" style="margin-top:8px;"></span> Límites Municipales</div>
+
+      <div class="leyenda-seccion">EQUIPAMIENTOS</div>
+      <div class="leyenda-item">
+        <span class="sym sym-icono" style="background:#2196F3;"></span> Centros de Educación Ambiental
+      </div>
+      <div class="leyenda-item">
+        <span class="sym sym-icono" style="background:#FF9800;"></span> Centros de Visitantes
+      </div>
+      <div class="leyenda-item">
+        <span class="sym sym-icono" style="background:#9C27B0;"></span> Oficinas Comarcales
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS (local) -->
+  <script src="vendor/leaflet/leaflet.js"></script>
+
+  <!-- Lógica del mapa -->
+  <script src="js/patrones.js"></script>
+  <script src="js/mapa.js"></script>
+
+</body>
+</html>
