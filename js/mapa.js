@@ -366,9 +366,8 @@
       if (!(k in overlaysOrdenado)) overlaysOrdenado[k] = overlayLayers[k];
     });
 
-    var esMobil = window.matchMedia('(max-width: 600px)').matches;
     L.control.layers(baseLayers, overlaysOrdenado, {
-      collapsed: esMobil,
+      collapsed: true,
       position: 'topright'
     }).addTo(map);
 
